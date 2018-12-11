@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coke Vendo App</title>
+</head>
+<body><center>
+
+	<label>Amount:</label><br><br><input type="text" name="" id="input"><br><br><br>
+	<input type="button" name="" value="350ml" onclick="one()"><input type="button" value="450ml" name="" onclick="two()"><input type="button" name="" value="650ml" onclick="three()">
+
+</center>
+<script type="text/javascript">
+	function one()
+{
+	var x=Number(document.getElementById('input').value);
+
+	if ((x)>=25)
+	{
+		alert('This Coke costs $25, your money is $'+x+', Enjoy Your Coke!')
+	}
+	else{
+		alert('This Coke costs $25, your money is $'+x+', Insufficient Amount!')
+	}
+}
+function two()
+{
+	var x=Number(document.getElementById('input').value);
+
+	if ((x)>=30)
+	{
+		alert('This Coke costs $30, your money is $'+x+', Enjoy Your Coke!')
+	}
+	else{
+		alert('This Coke costs $30, your money is $'+x+', Insufficient Amount!')
+	}
+}
+function three()
+{
+	var x=Number(document.getElementById('input').value);
+
+	if ((x)>=50)
+	{
+		alert('This Coke costs $50, your money is $'+x+', Enjoy Your Coke!')
+	}
+	else{
+		alert('This Coke costs $50, your money is $'+x+', Insufficient Amount!')
+	}
+}
+</script>
+</body>
+</html>
